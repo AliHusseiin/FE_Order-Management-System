@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Simplified Color Scheme */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  --light-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  color: #2c3e50;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background-color: var(--card-bg);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.table {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.form-control, .form-select {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Navbar Styling */
+.navbar-dark {
+  background-color: var(--primary-color) !important;
+}
+
+/* Card Headers */
+.card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 600;
+}
+
+/* Badge Colors */
+.badge.bg-success { background-color: var(--success-color) !important; }
+.badge.bg-warning { background-color: var(--warning-color) !important; }
+.badge.bg-danger { background-color: var(--danger-color) !important; }
+.badge.bg-info { background-color: var(--accent-color) !important; }
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+  
+  .btn-group .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}

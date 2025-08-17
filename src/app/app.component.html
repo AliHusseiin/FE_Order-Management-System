@@ -1,0 +1,11 @@
+<ng-container *ngIf="!(authService.isAuthenticated() && router.url !== '/login')">
+  <router-outlet></router-outlet>
+</ng-container>
+
+<ng-container *ngIf="authService.isAuthenticated() && router.url !== '/login'">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+</ng-container>
+
+<!-- Notification component - always visible -->
+<app-notification></app-notification>
